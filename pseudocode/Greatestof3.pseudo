@@ -1,0 +1,21 @@
+//Pseudocode to find Greatest of 3 Numbers using nested if statements
+// Author:Chetan Raj Patel <chetanrajpatel99@gmail.com>
+
+Start
+    Declare num1,num2,num3,greatest as Integer
+
+    Prompt the user for three numbers
+    Input num1,num2,num3
+//Logical Operator -AND,OR,NOT
+// It is used to specify multiple conditions in conditional expressions
+
+        If (num1 is greater than num2) AND (num1 is greater than num3) Then
+            set greatest=num1
+        Else If (num2 is greater than num3) Then
+            set greatest=num2
+        Else
+            set greatest=num3
+        EndIf
+
+    Print "The Greatest Number is :",greatest
+End

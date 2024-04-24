@@ -1,0 +1,13 @@
+//Pseudocode to sum all positive numbers entered by user-Do while Loop
+Start
+    Declare number ,sum
+    set sum to 0
+
+    do 
+        Prompt the user "Enter a positive integer"
+        Read the input into number
+        set sum to sum+number
+    while number>=0
+    End
+    Print "The sum of your positive integers is : ",sum
+End

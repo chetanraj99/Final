@@ -1,0 +1,28 @@
+//Pseudocode to find the maximum value in an array using Functions
+Start
+    Function findGreatestElement(array)
+        Declare greatest as Integer
+        set greatest to array[0] // set first element of array as greatest
+        //iterate in array
+        For each element in array from index 1 to length of array
+            if element > greatest then  //compare element with greatest element found so far
+                set greatest to element
+            endif
+        endfor
+        return greatest
+    endFunction
+
+    // Main Function
+    Function main()
+        Declare arr[] as Integer    //declare an array
+
+        arr={64,12,45}  //Initializing the array with some values
+
+        Print "Original array:",arr
+        //call the function & pass the array
+        Declare max 
+        set max to findGreatestElement(arr)
+
+        Print "\n\r The Greatest element in the array :",max 
+    EndFunction
+End

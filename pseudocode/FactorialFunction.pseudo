@@ -1,0 +1,27 @@
+//Pseudocode to find fatorial of a number using function
+
+Start
+//Declare the function named "factorial" that takes an input parameter called "num"
+Function fatorial(num)
+
+    if num is equal to 0 or num equals 1 then
+        return 1
+    endif
+
+    Declare fact 
+    set fact to 1
+
+    //calculate factorial
+
+    for i from 2 to num
+        set fact to fact * i 
+    endfor
+    return the value of fact 
+endFunction
+
+//Main function
+Declare number,result as Integer
+input number
+//call factorial function
+set result to factorial(number)
+Print "The factorial of " +number+" is :"+result

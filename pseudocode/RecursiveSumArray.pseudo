@@ -1,0 +1,29 @@
+//Pseudocode to find sum of array elements using Recursion
+/*
+    1st Recursion:arr{1,2,3,4}+5
+    2nd Recursion:arr{1,2,3}+4
+    3rd Recursion:arr{1,2}+3
+    4th Recursion:arr{1}+2
+    
+*/
+Start
+    Function findSum(arr,n)
+        if n is 0 then return 0;
+
+        return findSum(arr,n-1) + arr[n-1];   //recursive call with reduced size by one element
+    EndFunction
+
+     // Main Function
+    Function main()
+        Declare arr[] as Integer    //declare an array
+
+        arr={1,2,3,4,5}  //Initializing the array with some values
+
+        Print "Original array:",arr
+        //call the function & pass the array
+        Declare sum as Integer
+        set sum to findSum(arr,5)
+
+        Print "\n\r The Sum of all element in the array :",sum 
+    EndFunction
+End

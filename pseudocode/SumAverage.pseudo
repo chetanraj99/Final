@@ -1,0 +1,13 @@
+// Pseudocode to find Sum & Average of 3 Numbers
+Start
+    Declare num1,num2,num3,sum as Integer
+    Declare average as Float
+
+    Input value for num1,num2,num3
+
+    set sum=num1+num2+num3
+
+    set average=sum/3
+
+    Output "The sum of 3 numbers is :"+sum
+    Output "The Average of the 3 numbers is:"+average

@@ -1,0 +1,19 @@
+//Pseudocode to find factorial of a number using Recursive Algorithm
+
+Start
+    Funtion factorial(n):   //n=5
+        if n equals 0 or 1 then //base case for factorial function
+            return 1
+        else 
+            //recusively calling the same reduced argument until base case is reached
+            return (n*factorial(n-1))   //factorial(5)=5*4,4*3,3*2,2*1 and finally 1*0 which returns 1
+    endFunction
+
+    //Main program
+    Declare number , result as Integer
+    set number=5
+
+    set result=factorial(number)    //calling the funtion and assigning its value to variable "result"
+
+    Print "The factorial of ",number ," is ",result
+End

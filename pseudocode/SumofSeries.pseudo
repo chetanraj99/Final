@@ -1,0 +1,13 @@
+//Pseudocode to find sum of series 1+2+3+4....n
+Start
+    Declare i,n,sum as Integer
+    set sum to 0
+    Prompt the user for a number (n)
+    Read n 
+
+    For i from 1 to n 
+        set sum=i+sum
+    EndFor
+
+    Print "Sum of series :",sum
+End

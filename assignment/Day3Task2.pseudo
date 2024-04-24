@@ -1,0 +1,37 @@
+//Pseudocode for fibonacci number using recursive approach
+Start
+    //Recursive approach to calculate the nth Fibonacci number
+        Function fibonacci(n):
+            If n==0 or n==1:        //Base case : if n equals to zero or one then it will start returning
+                return n 
+            Else:
+                return fibonacci(n - 1) + fibonacci(n - 2) //recursively  calling function to get summation of privious two terms upto base case termination
+            EndIf 
+        EndFunction
+End
+
+/*
+Efficiency Analysis:
+
+Time Complexity: Exponential O(2^n), as every function calls two other functions.
+
+Space complexity: O(n), as the maximum depth of the recursion tree is n.
+
+Pros and Cons:
+
+Recursive Approach:
+Pros:
+    Simple and easy to understand.
+    Follows the mathematical definition of Fibonacci sequence directly.
+Cons:
+    Exponential time complexity leads to inefficiency for large inputs.
+    Exponential space complexity can cause stack overflow errors for large inputs.
+
+Iterative Approach:
+Pros:
+    Linear time complexity results in better efficiency, especially for large inputs.
+    Constant space complexity makes it more memory-efficient.
+Cons:
+    Slightly more complex due to the use of loops and additional variables.
+    Doesn't directly follow the mathematical definition, may require a bit of understanding to grasp the iterative process.
+*/

@@ -1,0 +1,10 @@
+// Pseudocode for sum of two numbers
+Start
+    Declare num1,num2,sum as Integer
+    
+    Input value for num1,num2
+    
+    set sum=num1+num2
+
+    Output "Sum of numbers is:"+sum
+    Output "This is my first pseudocode"

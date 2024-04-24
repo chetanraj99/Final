@@ -1,0 +1,9 @@
+//Pseudo code to display numbers from 1 to 10 & ur name 10 times
+Start
+    Declare counter
+    set counter to 1
+    while counter <= 10
+        Print counter + "James Gosling"
+        Increment counter by 1
+    EndWhile
+End

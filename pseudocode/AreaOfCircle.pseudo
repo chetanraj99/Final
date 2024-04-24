@@ -1,0 +1,10 @@
+// Pseudocode to find Area of Circle
+
+Start
+    Declare area,radius as Float
+
+    Input value for radius
+
+    set area=3.14*radius*radius
+
+    Output "Area of circle is: "+area

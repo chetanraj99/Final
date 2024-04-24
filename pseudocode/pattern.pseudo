@@ -1,0 +1,19 @@
+//Pseudocode to display numbers in following format -Nested Loops
+/*
+    1
+    1 2 
+    1 2 3
+    1 2 3 4 
+    1 2 3 4 5
+*/
+Start
+    Declare i,j as Integer
+
+    //Outer loop
+    For i form i to 5
+        For j form 1 to i
+            Print j 
+        EndFor
+        Print "\n"
+    EndFor
+End

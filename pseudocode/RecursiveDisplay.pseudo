@@ -1,0 +1,20 @@
+//Display nos from 1 - n without using loops
+
+// recursive solution
+Start
+    Function displayNos(n)
+        // base case for recursion ,when n becomes zero or
+        // negative then return from function
+        if (n<=0) then return;
+
+        Else
+            displayNos(n-1) 
+            Print n +" "
+        EndIf 
+    EndFunction
+
+// Main
+Declare n as Integer
+set n=10
+displayNos(n)   //invoke recursive function
+End

@@ -1,0 +1,23 @@
+/*Insertion Sort pseudocode
+This pseudocode outlines the steps of the Insertion Sort algorithm. 
+It iterates through the list, starting from the second element, and inserts each 
+element into its correct position in the sorted part of the list. 
+This process continues until the entire list is sorted.
+ */
+
+Function InsertionSort(A: list of sortable items)
+    n := length(A)  // Number of elements in the list
+    
+    for i := 1 to n - 1 do  // Iterate through the list starting from the second element
+        key := A[i]  // Current element to be inserted
+        j := i - 1  // Index of the element before the current element
+        
+        // Move elements of A[0..i-1], that are greater than key, to one position ahead of their current position
+        while j >= 0 and A[j] > key do
+            A[j + 1] := A[j]
+            j := j - 1
+        end while
+        
+        A[j + 1] := key  // Insert key into its correct position in the sorted part of the list
+    end for
+end Function

@@ -1,0 +1,39 @@
+//Pseudocode for college management system using modular programing approach 
+// ths program is devloped by ronak mehta
+Start
+Moudle1:StudentModule
+    //Funtion to add a new student , display all student and search a particular student.
+    Function addStudent(name , rollno)
+        Print "Adding new student "+name+rollno 
+    endFunction
+
+    Function displayStudentInfo(rollno)
+        Print "******* STUDENT INFORMATION ***********"
+        Print "Name : ",name," Roll No.:",rollno
+        Print "***************************************"
+    endFunction
+EndModule1
+
+Moudle2: ExamMoudule
+    Function addMarks(rollno,subject,marks)
+        Print "Marks of Roll No. ",rollno, "for the subject ",subject,"are added as",marks 
+    endFunction
+
+    Function displayMarks(rollno)
+        Print "Mraks of Roll no. ",rollno,marks
+    EndFunction
+EndModule2
+
+//Main program
+Function Main()
+    //call functions from student module
+    Call Moudle1.addStudent("ronak mehta","0987654321")
+    Call Moudle1.displayStudentInfo("0987654321")
+
+    //call function from exam module
+    Call Moudle2.addMarks("0987654321","Mathematics",85)
+    Call Moudle2.displayMarks("0987654321")
+endFunction
+
+    Call Main()
+End 

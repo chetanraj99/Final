@@ -1,0 +1,13 @@
+//Pseudocode to check weather a number is odd or even
+Start
+    Declare num as Integer
+
+    Prompt the user to enter an Integer
+
+        // Mod - Remainder of division
+        If num mod of 2 is equal to 0 Then
+            Print "The number is Even"
+        Else 
+            Print "The number is odd"
+        EndIf
+End

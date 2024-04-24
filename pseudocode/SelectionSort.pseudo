@@ -1,0 +1,37 @@
+// Pseudocode for selection sort 
+/*This pseudocode outlines the steps of the Selection Sort algorithm.
+It iterates through the list, finds the index of the minimum element in the unsorted part,
+and swaps it with the first element of the unsorted part.
+This process repeats until the entire list is sorted.*/
+Start
+    Function selectionSort(arr)
+        set n=length of arr
+        For i from 0 to n-2 //iteratee through array except last element
+            minIndex=i // assume current index as minimum
+
+            //find the minimum element in the remaining unsorted
+            For j=i+1 to n-1
+                if(arr[j]<arr[minIndex])
+                    set minIndex=j
+                EndIf
+            EndFor
+
+            If minIndex !=i then
+                // swap only when the smallest is not at it's correct position
+                swap arr[i] and arr[minIndex]
+            EndIf 
+        EndFor
+    EndFunction
+
+    // Main Function
+    Function main()
+        Declare arr[] as Integer
+
+        arr={64,12,45}
+
+        Print "Original array:",arr
+
+        Call selectionSort(arr)
+
+        Print "\n\r Sorted array :",arr 
+    EndFunction

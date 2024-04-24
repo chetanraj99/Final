@@ -1,0 +1,17 @@
+//Pseudocode to check weather the given number is even or odd 
+//after calculation of it's square or cube
+Start
+
+    Prompt the user to enter a number
+    Read the input number and store it in a variable num
+
+    If num mod 2 is equal to 0
+        Set result = num * num     //(square of num)
+        Print "The square of ", num, " is ", result
+    
+    Else
+        Set result = num * num * num      //(cube of num)
+        Print "The cube of ", num, " is ", result
+    EndIf
+
+End

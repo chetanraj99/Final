@@ -1,0 +1,48 @@
+//Pseudocode for factorial of a number and 
+//nth fibonacci number using modular programming approach
+
+Start
+    Moudle:Calculate
+        //Recursive approach to get factorial of a number 
+        Function factorial(n)
+            If n equals 0 then       //Base case : if n equals to zero then it will return 1
+                return 1
+            Else
+                return n * factorial(n - 1)     //Recursively calling function to get the multiplication of n*(n-1),n-1(n-2) .... and so on up to base case
+            EndIf 
+        EndFunction
+
+        //Iterative approach to calculate the nth Fibonacci number
+        Function fibonacci(n)
+            If n equals 0 then
+                return 0
+            Else If n equals 1 then
+                return 1
+            Else
+                fibPrivious = 0
+                fibCurrent = 1
+                for i from 2 to n
+                    fib_next = fibPrivious + fibCurrent     //addtion of prvious two terms
+                    fibPrivious = fibCurrent                
+                    fibCurrent = fib_next                   
+                return fibCurrent
+        EndFunction
+
+    //Main program
+    Function Main()
+        Declare result,num as Integer
+        Prompt the user for a number (num)
+        Read num 
+        //call factorial function from calculate module
+        set result = Call Moudle.factorial(num)
+        Print "Factorial of 5 is : "+result
+
+        //call fibonacci function from calculate module
+        set result = Call Moudle.fibonacci(num)
+        Print num+"th Fibonacci number is : "+result
+
+    endFunction
+
+    Call Main()
+End 
+

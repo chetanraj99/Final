@@ -1,0 +1,11 @@
+//Pseudocode to display odd numbers between 1 to 20
+Start
+    Declare counter
+    set counter to 1
+    While counter <= 20
+        if (counter modulo 2) is not equal to 0 Then
+            Print counter
+        EndIf
+        Increment counter by 1
+    EndWhile
+End

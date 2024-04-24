@@ -1,0 +1,15 @@
+//Pseudocode to display nos from 1 to n
+Start
+    Declare i,n as Integer
+
+    Prompt the user for a number "n"
+    Input n
+    
+    For i form 1 to n //loop iterates from 1 - n
+        Print i 
+    EndFor
+
+    For i from n downto 1 //loop iterates form n - 1(Reverse Loop)
+        Print i 
+    EndFor
+End

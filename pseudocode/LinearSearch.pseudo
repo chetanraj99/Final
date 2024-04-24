@@ -1,0 +1,36 @@
+//Pseudocode for Linear Search
+/*This pseudocode outlines the steps of the Linear Search algorithm. 
+It iterates through the list sequentially, comparing each element with the target until the target is found or the end of the list is reached. 
+If the target is found, it outputs the position of the target; 
+otherwise, it indicates that the target is not found in the list.*/
+
+Start
+    Function LinearSearch(arr,item)
+        set found=false   //a flag to indicate weather we have found the item or not
+        set position = -1   //this will store the index of item found.-1 means not found
+        
+        for i=0 to length(arr) -1
+            if arr[i]==item then
+                set found=true
+                set position=i //position of item
+            EndIf
+        EndFor
+        If found is true then
+            Output "Item Found at Postion : ",position
+        Else 
+            Output "Item not Found"
+        EndIf
+    EndFunction
+
+    // Main Function
+    Function main()
+        Declare arr[] as Integer
+
+        arr={64,12,45}
+
+        Print "Original array:",arr
+
+        Call LinearSearch(arr)
+
+        Print "\n\r Sorted array :",arr 
+    EndFunction

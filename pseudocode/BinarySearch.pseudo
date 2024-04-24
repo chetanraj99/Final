@@ -1,0 +1,26 @@
+//  Binary Search 
+
+// This pseudocode outlines the steps of the Binary Search algorithm. 
+// It repeatedly divides the sorted list into halves and compares the target with the middle element. 
+// If the target is found, it outputs the position of the target; otherwise, 
+// it updates the search range accordingly until the target is found or the search range becomes empty.
+Start
+    Function BinarySearch(A: list of sorted items, target: item)
+        low := 0  // Initialize the lower bound of the search range
+        high := length(A) - 1  // Initialize the upper bound of the search range
+        
+        while low <= high do  // Continue searching until the search range is valid
+            mid := (low + high) / 2  // Calculate the middle index
+            
+            if A[mid] equals target then  // If the middle element is equal to the target
+                output "Target found at position " + mid  // Output the position of the target
+                return  // Exit the procedure since the target is found
+            else if A[mid] < target then  // If the target is greater than the middle element
+                low := mid + 1  // Update the lower bound of the search range
+            else  // If the target is less than the middle element
+                high := mid - 1  // Update the upper bound of the search range
+            end if
+        endwhile
+        
+        output "Target not found in the list"  // Output that the target is not found
+    endFunction
